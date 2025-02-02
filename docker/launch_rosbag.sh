@@ -1,0 +1,1 @@
+docker run  -d --rm --name=rosbagplay  --net=ros --env="DISPLAY=novnc:0.0" --env="ROS_MASTER_URI=http://roscore:11311" ros_melodic_slam bash -c "sleep 5 && rosbag play ../ros_bag/flight.bag"
